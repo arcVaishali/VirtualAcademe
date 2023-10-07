@@ -4,9 +4,10 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import SignUp from "./SignUp";
-import Login from "./Login";
-import Home from "./Home";
+import SignUp from "./AppPages/SignUp";
+import Login from "./AppPages/Login";
+import Home from "./AppPages/Home";
+import CoursesCategory from "./AppPages/CoursesCategory";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <Home/>
+  },
+  {
+    path: '/courses-category',
+    element: <CoursesCategory/>
   }
 ]);
 
