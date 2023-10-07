@@ -80,28 +80,28 @@ const DiscussionLanding = () => {
           </div>
         ))}
 
-        <table className="grid grid-cols-12 col-span-12 table-auto">
-          <thead>
+        <div className="grid grid-cols-12 col-span-12">
+          <div className="col-span-12">
             <tr>
-              <th className="px-4 py-2">Discussion Topic</th>
-              <th className="px-4 py-2">Actions</th>
+              <th className="col-span-4 px-4 py-2">Discussion Topic</th>
+              <th className="col-span-4 px-4 py-2">Actions</th>
             </tr>
-          </thead>
-          <tbody>
+          </div>
+          <div className="col-span-12 col-start-1">
             {tasks.map((val) => (
-              <tr key={val.id}>
-                <td className="border px-4 py-2">
+              <div key={val.id} className="grid grid-cols-12 col-span-12 ">
+                <div className="border px-4 py-2 col-span-1">
                   <Link to={`/discussion-forum/${val.id}`}>
                     {val.data.title}
                   </Link>
-                </td>
-                <td className="border px-4 py-2">
+                </div>
+                <div className="border px-4 py-2 col-span-11">
                   <p>{val.data.description}</p>
-                </td>
-              </tr>
+                </div>
+              </div>
             ))}
-          </tbody>
-        </table>
+          </div>
+        </div>
         <CreateDiscussion />
       </div>
     </div>
