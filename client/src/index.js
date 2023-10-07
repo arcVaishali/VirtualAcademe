@@ -10,6 +10,9 @@ import Home from "./AppPages/Home";
 import CoursesCategory from "./AppPages/CoursesCategory";
 import CoursesHome from "./AppPages/CoursesHome";
 import AllCourses from "./AppPages/AllCourses";
+import DiscussionForum from "./AppPages/DiscussionForum";
+import DiscussionLanding from "./AppPages/DiscussionLanding";
+import "./index.css"
 
 const router = createBrowserRouter([
   {
@@ -37,8 +40,15 @@ const router = createBrowserRouter([
   {
     path:'/course-overview',
     element:<AllCourses/>
-
   },
+  {
+    path: '/discussion-forum',
+    element: <DiscussionLanding/>
+  },
+  {
+    path: '/discussion-forum/:id',
+    element: <DiscussionForum/>
+  }
 ]);
 
 createRoot(document.getElementById("root")).render(
