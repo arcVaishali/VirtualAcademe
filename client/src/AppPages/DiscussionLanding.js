@@ -15,19 +15,7 @@ const DiscussionLanding = () => {
       })))
     })
   },[])
-  const editForum = async(e) => {
-    e.preventDefault();
-    const taskDocRef = doc(db,'forum',tasks.id)
-    try{
-      await updateDoc(taskDocRef,{
-        title: tasks.title,
-        description: tasks.description
-      })
-    }
-    catch(err){
-      alert(err)
-    }
-  }
+  
   return (
     <div>
       <h1 className='text-center text-3xl'>Discussion Forum</h1>
@@ -46,7 +34,7 @@ const DiscussionLanding = () => {
                 <Link to={`/discussion-forum/${val.id}`}>{val.data.title}</Link>
               </td>
               <td className="border px-4 py-2">
-                <button onSubmit={editForum}>Edit</button>
+                <p>{val.data.description}</p>
               </td>
             </tr>
           ))}
