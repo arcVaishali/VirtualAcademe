@@ -13,6 +13,7 @@ import CoursesHome from "./AppPages/CoursesHome";
 import AllCourses from "./AppPages/AllCourses";
 import UserDashboard from "./AppPages/UserDashboard";
 import CoursesOverview from "./AppPages/CoursesOverview";
+import PrivateMessaging from "./AppPages/PrivateMessaging";
 
 const router = createBrowserRouter([
   {
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
   {
     path:'/user-dashboard',
     element:<UserDashboard/>
+  },
+  {
+    path:'/messages',
+    element:<PrivateMessaging/>
   }
 ]);
 
