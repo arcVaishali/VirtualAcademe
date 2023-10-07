@@ -143,7 +143,7 @@ const PrivateMessaging = () => {
           </div>
         </div>
       ) : (
-        <button onClick={() => loginWithRedirect()}>Log In</button>
+        <button onClick={() => loginWithRedirect({ appState: { returnTo: '/messages' } })}>Log In</button>
       )}
     </div>
   );
