@@ -34,6 +34,11 @@ const router = createBrowserRouter([
     element:<AllCourses/>
 
   },
+  {
+    path:'/course-overview',
+    element:<AllCourses/>
+
+  },
 ]);
 
 createRoot(document.getElementById("root")).render(
