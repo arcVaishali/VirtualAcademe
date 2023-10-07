@@ -25,12 +25,18 @@ const DiscussionLanding = () => {
     });
   }, []);
 
+  const stats = [
+    { icon: "ri-pushpin-line bg-gray-500", text: "Posts", stat: "30" },
+    { icon: "ri-volume-up-line bg-red-500", text: "Topics", stat: "30" },
+    { icon: "ri-chat-1-line bg-green-500", text: "Replies", stat: "30" },
+  ];
+
   return (
     <div className="grid grid-cols-12 justify-center items-center px-20 py-20">
       <div className="grid col-span-12 col-start-1">
         <img
           src="https://themes.thememasters.club/disputo/wp-content/uploads/sites/14/2020/08/homepage-bg.jpg"
-          className="z-10"
+          className="transition delay-50 hover:scale-110 duration-500 z-10"
         />
         <div className="col-span-8 px-16 pt-32 pb-[477px] z-20 absolute bg-[#1d84b5] w-[600px] justify-center items-center h-screen">
           <span className="grid col-span-8 col-start-2 mb-2 text-2xl leading-10 text-white uppercase">
@@ -42,7 +48,7 @@ const DiscussionLanding = () => {
             register with the Forumix forum you can join in with topics, start
             new topics and generally be a part of the first level of our
             community.
-             <br />
+            <br />
           </span>
           <div className="grid col-span-8 mt-4 col-start-2 bg-[#364253] border-[#364253] border-2 border-solid px-2 py-2 text-center text-white hover:bg-transparent hover:text-white hover:border-[#364253] hover:border-2 hover:border-solid w-64 ">
             <Link
@@ -55,34 +61,49 @@ const DiscussionLanding = () => {
         </div>
         {/* <div className="absolute inset-0 bg-gray-500 opacity-90 w-fill h-screen object-cover"></div> */}
       </div>
-      {/* <div className=""></div> */}
+      <div className="grid grid-cols-12 col-span-12 gap-2 justify-center items-center mb-16 relative top-[50px]">
+        {stats.map((element) => (
+          <div className="grid grid-cols-4 col-span-4 justify-between rounded-sm items-center shadow-md shadow-gray-300 px-8 py-4">
+            <span className="col-span-1">
+              <i
+                className={
+                  element.icon + " text-6xl rounded-full px-2 py-2 text-white"
+                }
+              ></i>
+            </span>
+            <div className="grid grid-rows-1 col-start-4 col-span-1">
+              <span className="uppercase font-semibold text-gray-400 text-xl">
+                {element.text}
+              </span>
+              <span className="text-xl font-semibold">{element.stat}</span>
+            </div>
+          </div>
+        ))}
 
-      
-
-      <h1 className="col-span-12 col-start-2 text-center text-3xl">
-        Discussion Forum
-      </h1>
-      <CreateDiscussion />
-      <table className="table-auto">
-        <thead>
-          <tr>
-            <th className="px-4 py-2">Discussion Topic</th>
-            <th className="px-4 py-2">Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          {tasks.map((val) => (
-            <tr key={val.id}>
-              <td className="border px-4 py-2">
-                <Link to={`/discussion-forum/${val.id}`}>{val.data.title}</Link>
-              </td>
-              <td className="border px-4 py-2">
-                <p>{val.data.description}</p>
-              </td>
+        <table className="grid grid-cols-12 col-span-12 table-auto">
+          <thead>
+            <tr>
+              <th className="px-4 py-2">Discussion Topic</th>
+              <th className="px-4 py-2">Actions</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {tasks.map((val) => (
+              <tr key={val.id}>
+                <td className="border px-4 py-2">
+                  <Link to={`/discussion-forum/${val.id}`}>
+                    {val.data.title}
+                  </Link>
+                </td>
+                <td className="border px-4 py-2">
+                  <p>{val.data.description}</p>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <CreateDiscussion />
+      </div>
     </div>
   );
 };
