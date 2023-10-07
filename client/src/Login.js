@@ -1,20 +1,22 @@
 import React,{useState} from 'react'
-import { signInWithEmailAndPassword } from 'firebase/auth'
+import { signInWithEmailAndPassword,getAuth } from 'firebase/auth'
 import { app } from './Firebase'
 import {  useNavigate} from 'react-router-dom'
+
+const firebaseAuth = getAuth(app);
 
 const Login = () => {
     const navigate = useNavigate()
     const [email,setEmail] = useState('');
     const [password,setPassword] = useState('')
-    const onLogin = (e) =>{
+    const onLogin = async(e) =>{
         e.preventDefault();
-        signInWithEmailAndPassword(app,email,password).then((userCredential)=>{
+        await signInWithEmailAndPassword(firebaseAuth,email,password).then((userCredential)=>{
             const user = userCredential.user;
-            navigate('/home')
+            navigate('/')
             console.log(user);
         }).catch((e)=>{
-            console.error(e);
+            console.log('Error');
         })
     }
   return (
@@ -29,7 +31,7 @@ const Login = () => {
             <label htmlFor="password">Password</label>
             <input type="password" label="Create Password" value={password} onChange={(e)=>setPassword(e.target.value)} placeholder='Password' />
         </div>
-        <button type='submit' onClick={onLogin}>SignUp</button>
+        <button type='submit' onClick={onLogin}>LogIn</button>
       </form>
     </div>
   )
