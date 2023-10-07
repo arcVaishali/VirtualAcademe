@@ -99,9 +99,7 @@ const PrivateMessaging = () => {
           </div>
         ))}
       </div>
-      <div className="grid grid-cols-8 col-span-8">
-        {/* CHAT BODY */}
-      </div>
+      <div className="grid grid-cols-8 col-span-8">{/* CHAT BODY */}</div>
     </div>
   );
 };
