@@ -1,11 +1,12 @@
 import * as React from "react";
+import "./index.css"
 import { createRoot } from "react-dom/client";
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import SignUp from "./AppPages/SignUp";
-import Login from "./AppPages/Login";
+import SignUp from "./SignUp";
+import Login from "./Login";
 import Home from "./AppPages/Home";
 import CoursesCategory from "./AppPages/CoursesCategory";
 import CoursesHome from "./AppPages/CoursesHome";
@@ -13,6 +14,8 @@ import AllCourses from "./AppPages/AllCourses";
 import DiscussionForum from "./AppPages/DiscussionForum";
 import DiscussionLanding from "./AppPages/DiscussionLanding";
 import "./index.css"
+import UserDashboard from "./AppPages/UserDashboard";
+import CoursesOverview from "./AppPages/CoursesOverview";
 
 const router = createBrowserRouter([
   {
@@ -39,7 +42,7 @@ const router = createBrowserRouter([
   },
   {
     path:'/course-overview',
-    element:<AllCourses/>
+    element:<CoursesOverview/>
   },
   {
     path: '/discussion-forum',
@@ -48,6 +51,10 @@ const router = createBrowserRouter([
   {
     path: '/discussion-forum/:id',
     element: <DiscussionForum/>
+  }
+  {
+    path:'/user-dashboard',
+    element:<UserDashboard/>
   }
 ]);
 

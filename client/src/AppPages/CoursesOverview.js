@@ -177,7 +177,7 @@ const CoursesOverview = () => {
   ];
   const [set, setSet] = useState(cards[0].details);
   const [highlight, setHighlight] = useState(true);
-  const [unhighlight , setUnhighlight] = useState(false);
+  const [unhighlight, setUnhighlight] = useState(false);
   function clickFunction(val) {
     if (
       val != "Overview" &&
@@ -209,8 +209,8 @@ const CoursesOverview = () => {
           break;
         }
       }
-    } 
-  },[]);
+    }
+  }, []);
   // const style = {
   //   color: highlight ? "white" : "black",
   //   backgroundColor: highlight ? "black" : "gray",
@@ -247,7 +247,9 @@ const CoursesOverview = () => {
               key={key}
               // style={ backgroundColor}
               className={
-                categories[element] === "Overview" && highlight === true && unhighlight != true
+                categories[element] === "Overview" &&
+                highlight === true &&
+                unhighlight != true
                   ? "flex col-span-2 justify-center mx-2 px-2 py-2 rounded-sm hover:bg-orange-500 hover:text-white items-center bg-orange-500 text-white font-extralight focus:bg-orange-500 focus:text-white active:bg-orange-400 active:text-white"
                   : "flex col-span-2 justify-center mx-2 px-2 py-2 rounded-sm hover:bg-orange-500 hover:text-white items-center bg-gray-300 text-gray-700 font-extralight focus:bg-orange-500 focus:text-white active:bg-orange-400 active:text-white"
               }
