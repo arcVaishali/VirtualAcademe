@@ -4,8 +4,8 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import SignUp from "./AppPages/SignUp";
-import Login from "./AppPages/Login";
+import SignUp from "./SignUp";
+import Login from "./Login";
 import Home from "./AppPages/Home";
 import CoursesCategory from "./AppPages/CoursesCategory";
 import CoursesHome from "./AppPages/CoursesHome";
