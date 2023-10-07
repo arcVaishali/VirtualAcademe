@@ -17,51 +17,64 @@ import "./index.css"
 import UserDashboard from "./AppPages/UserDashboard";
 import CoursesOverview from "./AppPages/CoursesOverview";
 import PrivateMessaging from "./AppPages/PrivateMessaging";
+import { Auth0Provider } from '@auth0/auth0-react';
+import ReactDOM from 'react-dom';
 
 const router = createBrowserRouter([
   {
     path: "signup",
-    element: <SignUp/>
+    element: <SignUp />
   },
   {
     path: "login",
-    element: <Login/>
+    element: <Login />
   },
   {
     path: '/',
-    element: <Home/>
+    element: <Home />
   },
   {
-    path:'/courses',
-    element:<CoursesHome/>
+    path: '/courses',
+    element: <CoursesHome />
 
   },
   {
-    path:'/all-courses',
-    element:<AllCourses/>
+    path: '/all-courses',
+    element: <AllCourses />
   },
   {
-    path:'/course-overview',
-    element:<CoursesOverview/>
+    path: '/course-overview',
+    element: <CoursesOverview />
   },
   {
     path: '/discussion-forum',
-    element: <DiscussionLanding/>
+    element: <DiscussionLanding />
   },
   {
     path: '/discussion-forum-page',
-    element: <DiscussionForum/>
+    element: <DiscussionForum />
   },
   {
-    path:'/user-dashboard',
-    element:<UserDashboard/>
+    path: '/user-dashboard',
+    element: <UserDashboard />
   },
   {
-    path:'/messages',
-    element:<PrivateMessaging/>
+    path: '/messages',
+    element: <PrivateMessaging />
   }
 ]);
 
-createRoot(document.getElementById("root")).render(
-  <RouterProvider router={router} />
+ReactDOM.render(
+  <React.StrictMode>
+  <Auth0Provider
+    domain="dev-2mgbgxm3b0scb3xq.us.auth0.com"
+    clientId="jbPL61beWzQOURvUieeunKmYzwpWY391"
+    authorizationParams={{
+      redirect_uri: window.location.origin
+    }}
+  >
+    <RouterProvider router={router} />
+  </Auth0Provider>
+  </React.StrictMode>,
+  document.getElementById("root")
 );
