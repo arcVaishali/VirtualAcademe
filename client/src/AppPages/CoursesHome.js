@@ -1,14 +1,14 @@
-import React from 'react'
-import CoursesHeader from './CoursesHeader'
-import CoursesCategory from './CoursesCategory'
+import React from "react";
+import CoursesHeader from "./CoursesHeader";
+import CoursesCategory from "./CoursesCategory";
 
 const CoursesHome = () => {
   return (
     <>
-    <CoursesHeader/>
-    <CoursesCategory/>
+      <CoursesHeader />
+      <CoursesCategory />
     </>
-  )
-}
+  );
+};
 
-export default CoursesHome
+export default CoursesHome;
