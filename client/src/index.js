@@ -9,6 +9,7 @@ import Login from "./AppPages/Login";
 import Home from "./AppPages/Home";
 import CoursesCategory from "./AppPages/CoursesCategory";
 import CoursesHome from "./AppPages/CoursesHome";
+import AllCourses from "./AppPages/AllCourses";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,11 @@ const router = createBrowserRouter([
   {
     path:'/courses',
     element:<CoursesHome/>
+
+  },
+  {
+    path:'/all-courses',
+    element:<AllCourses/>
 
   },
 ]);
