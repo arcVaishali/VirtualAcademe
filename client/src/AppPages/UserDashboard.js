@@ -8,7 +8,7 @@ const UserDashboard = () => {
     {
       star: "1.4k",
       views: "2.4k",
-      courses: "Course",
+      courses: "20 completed",
     },
   ];
 
@@ -87,9 +87,50 @@ const UserDashboard = () => {
       ],
     },
   ];
+
+  const discussionList = [
+    {
+      date: "20/12/2023",
+      lessons: [
+        [
+          { courseName: "Announcement" },
+          { lesson: "2 minute read" },
+          { lecturer: "Mr.Hemant Sharma" },
+          { length: "posted yesterday" },
+          { time: "12.4k likes" },
+        ],
+        [
+          { courseName: "Announcement" },
+          { lesson: "2 minute read" },
+          { lecturer: "Mr.Hemant Sharma" },
+          { length: "posted yesterday" },
+          { time: "12.4k likes" },
+        ],
+      ],
+    },
+    {
+      date: "23/12/2023",
+      lessons: [
+        [
+          { courseName: "Announcement" },
+          { lesson: "2 minute read" },
+          { lecturer: "Mr.Hemant Sharma" },
+          { length: "posted yesterday" },
+          { time: "12.4k likes" },
+        ],
+        [
+          { courseName: "Announcement" },
+          { lesson: "2 minute read" },
+          { lecturer: "Mr.Hemant Sharma" },
+          { length: "posted yesterday" },
+          { time: "12.4k likes" },
+        ],
+      ],
+    },
+  ];
   return (
-    <div className="grid grid-cols-12 col-span-12 justify-between items-center gap-8 pt-8 px-4 col-start-2">
-      <div className="grid col-span-2 bg-white shadow-gray-400 shadow-2xl px-2 py-2">
+    <div className="grid grid-cols-12 col-span-12 justify-between items-center gap-8 pt-8 col-start-2">
+      <div className="grid col-span-2 bg-white shadow-gray-400 shadow-2xl ml-8 px-2 py-2">
         <img
           src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZSUyMGltYWdlfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60"
           className="w-fill"
@@ -98,15 +139,15 @@ const UserDashboard = () => {
       <div className="grid grid-cols-12 col-span-9 justify-center items-center">
         <div className="grid grid-cols-12 col-span-12 justify-center items-center">
           <div className="grid grid-rows-2 col-start-1 col-span-10">
-            <span className="text-3xl col-span-10">Jenna Ortego</span>
+            <span className="text-3xl col-span-10">James Johannes</span>
             <span className="text-sm text-gray-300 col-span-3">
-              Art Illustrator
+              Forum Role: Keymaster
             </span>
           </div>
-          <div className="bg-[#3484B4] border-[#3484B4] border-2 border-solid rounded-md px-2 py-2 text-center text-white hover:bg-white hover:text-[#3484B4] hover:border-[#3484B4] hover:border-2 hover:border-solid w-32">
+          <div className="bg-black border-black border-2 border-solid rounded-md px-2 py-2 text-center text-white hover:bg-white hover:text-black hover:border-black hover:border-2 hover:border-solid w-32">
             <Link
               to="/new-course"
-              className="flex flex-row justify-center items-center"
+              className="flex flex-row justify-center items-center text-sm"
             >
               Follow
             </Link>
@@ -127,16 +168,29 @@ const UserDashboard = () => {
             {stats.map((element) => (
               <div className="grid grid-cols-12 col-span-8">
                 <span className="flex col-span-3 items-center justify-center">
-                  <i className="ri-star-line text-yellow-500"></i>{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-4 h-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"
+                    />
+                  </svg>
                   {element.star}
                 </span>
                 <span className="flex col-span-3 items-center justify-center">
-                  <i className="ri-eye-line text-red-500"></i>
+                  <i className="ri-eye-line text-black"></i>
                   {element.views}
                 </span>
 
                 <span className="flex col-span-3 items-center justify-center">
-                  <i className="ri-play-circle-line text-green-500"></i>
+                  <i className="ri-play-circle-line text-black"></i>
                   {element.courses}
                 </span>
               </div>
@@ -230,14 +284,14 @@ const UserDashboard = () => {
           </div>
           <div className="grid grid-cols-6 col-span-5 justify-between items-center col-start-7 px-8">
             <span className="col-span-5 text-2xl font-bold">
-              Lesson Schedule
+              Discussions
             </span>
             <div className="bg-[#3484B4] border-[#3484B4] border-2 border-solid rounded-md px-2 py-2 text-center text-white hover:bg-white hover:text-[#3484B4] hover:border-[#3484B4] hover:border-2 hover:border-solid w-32">
               <Link
                 to="/new-course"
                 className="flex flex-row justify-center items-center"
               >
-                Watch now
+                See more
               </Link>
             </div>
           </div>
@@ -287,7 +341,7 @@ const UserDashboard = () => {
           </div>
 
           <div className="grid grid-cols-4 justify-between items-center col-span-6">
-            {lessonSchedule.map((element) => (
+            {discussionList.map((element) => (
               <div className="grid grid-cols-4 justify-between items-center col-span-4">
                 <span className="text-xl font-semibold mb-4">
                   {element.date}
