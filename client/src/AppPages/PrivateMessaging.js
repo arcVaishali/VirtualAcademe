@@ -55,6 +55,7 @@ const PrivateMessaging = () => {
       />
       <button type="submit">Send</button>
     </form>
+
   );
 };
 
