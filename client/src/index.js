@@ -1,4 +1,5 @@
 import * as React from "react";
+import "./index.css"
 import { createRoot } from "react-dom/client";
 import {
   createBrowserRouter,
@@ -11,6 +12,7 @@ import CoursesCategory from "./AppPages/CoursesCategory";
 import CoursesHome from "./AppPages/CoursesHome";
 import AllCourses from "./AppPages/AllCourses";
 import UserDashboard from "./AppPages/UserDashboard";
+import CoursesOverview from "./AppPages/CoursesOverview";
 
 const router = createBrowserRouter([
   {
@@ -37,7 +39,7 @@ const router = createBrowserRouter([
   },
   {
     path:'/course-overview',
-    element:<AllCourses/>
+    element:<CoursesOverview/>
 
   },
   {
