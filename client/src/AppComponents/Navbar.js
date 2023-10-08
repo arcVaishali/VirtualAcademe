@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const navigation = [
-    { name: "Dashboard", to: "/learner-dashboard" },
-    { name: "View Courses", to: "/categories" },
+    { name: "Dashboard", to: "/user-dashboard" },
+    { name: "View Courses", to: "/courses" },
     {name: "Discussion", to:"/discussion-forum"},
     {name: "Messages", to:"/message"},
     { name: "Community Chat", to: "/community-chat" },
@@ -16,8 +16,8 @@ const Navbar = () => {
       <div className="grid grid-cols-12 col-span-12 col-start-1 px-4 py-4 justify-between items-center">
         <div className="flex flex-col mr-4">
           <img
-            src="https://i.ibb.co/5MXSrg8/cropped-logo.png"
-            className="w-16"
+            src="https://i.ibb.co/DbScY2f/virtual-campus-logo-removebg-preview.png"
+            className="w-32"
           />
         </div>
         <div className="col-span-9 ml-[90px]">

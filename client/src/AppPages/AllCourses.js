@@ -35,7 +35,7 @@ const AllCourses = () => {
           ],
         },
       ],
-      to: "/path",
+      to: "/course-overview",
     },
     {
       index: "0",
@@ -66,7 +66,7 @@ const AllCourses = () => {
           ],
         },
       ],
-      to: "/path",
+      to: "/course-overview",
     },
     {
       index: "0",
@@ -97,7 +97,7 @@ const AllCourses = () => {
           ],
         },
       ],
-      to: "/path",
+      to: "/course-overview",
     },
     {
       index: "0",
@@ -128,7 +128,7 @@ const AllCourses = () => {
           ],
         },
       ],
-      to: "/path",
+      to: "/course-overview",
     },
     {
       index: "0",
@@ -159,7 +159,7 @@ const AllCourses = () => {
           ],
         },
       ],
-      to: "/path",
+      to: "/course-overview",
     },
     {
       index: "0",
@@ -190,7 +190,7 @@ const AllCourses = () => {
           ],
         },
       ],
-      to: "/path",
+      to: "/course-overview",
     },
   ];
   // const [all , setAll] = useState(true);
@@ -233,7 +233,7 @@ const AllCourses = () => {
               ],
             },
           ],
-          to: "/path",
+          to: "/course-overview",
         },
         {
           index: "0",
@@ -264,7 +264,7 @@ const AllCourses = () => {
               ],
             },
           ],
-          to: "/path",
+          to: "/course-overview",
         },
         {
           index: "0",
@@ -295,7 +295,7 @@ const AllCourses = () => {
               ],
             },
           ],
-          to: "/path",
+          to: "/course-overview",
         },
         {
           index: "0",
@@ -326,7 +326,7 @@ const AllCourses = () => {
               ],
             },
           ],
-          to: "/path",
+          to: "/course-overview",
         },
         {
           index: "0",
@@ -357,7 +357,7 @@ const AllCourses = () => {
               ],
             },
           ],
-          to: "/path",
+          to: "/course-overview",
         },
         {
           index: "0",
@@ -388,7 +388,7 @@ const AllCourses = () => {
               ],
             },
           ],
-          to: "/path",
+          to: "/course-overview",
         },
       ],
     },
@@ -425,7 +425,7 @@ const AllCourses = () => {
               ],
             },
           ],
-          to: "/path",
+          to: "/course-overview",
         },
         {
           index: "0",
@@ -456,7 +456,7 @@ const AllCourses = () => {
               ],
             },
           ],
-          to: "/path",
+          to: "/course-overview",
         },
         {
           index: "0",
@@ -487,7 +487,7 @@ const AllCourses = () => {
               ],
             },
           ],
-          to: "/path",
+          to: "/course-overview",
         },
         {
           index: "0",
@@ -518,7 +518,7 @@ const AllCourses = () => {
               ],
             },
           ],
-          to: "/path",
+          to: "/course-overview",
         },
         {
           index: "0",
@@ -549,7 +549,7 @@ const AllCourses = () => {
               ],
             },
           ],
-          to: "/path",
+          to: "/course-overview",
         },
         {
           index: "0",
@@ -580,7 +580,7 @@ const AllCourses = () => {
               ],
             },
           ],
-          to: "/path",
+          to: "/course-overview",
         },
       ],
     },
@@ -617,7 +617,7 @@ const AllCourses = () => {
               ],
             },
           ],
-          to: "/path",
+          to: "/course-overview",
         },
         {
           index: "0",
@@ -648,7 +648,7 @@ const AllCourses = () => {
               ],
             },
           ],
-          to: "/path",
+          to: "/course-overview",
         },
         {
           index: "0",
@@ -679,7 +679,7 @@ const AllCourses = () => {
               ],
             },
           ],
-          to: "/path",
+          to: "/course-overview",
         },
         {
           index: "0",
@@ -710,7 +710,7 @@ const AllCourses = () => {
               ],
             },
           ],
-          to: "/path",
+          to: "/course-overview",
         },
         {
           index: "0",
@@ -741,7 +741,7 @@ const AllCourses = () => {
               ],
             },
           ],
-          to: "/path",
+          to: "/course-overview",
         },
         {
           index: "0",
@@ -772,7 +772,7 @@ const AllCourses = () => {
               ],
             },
           ],
-          to: "/path",
+          to: "/course-overview",
         },
       ],
     },
@@ -809,7 +809,7 @@ const AllCourses = () => {
               ],
             },
           ],
-          to: "/path",
+          to: "/course-overview",
         },
         {
           index: "0",
@@ -840,7 +840,7 @@ const AllCourses = () => {
               ],
             },
           ],
-          to: "/path",
+          to: "/course-overview",
         },
         {
           index: "0",
@@ -871,7 +871,7 @@ const AllCourses = () => {
               ],
             },
           ],
-          to: "/path",
+          to: "/course-overview",
         },
         {
           index: "0",
@@ -902,7 +902,7 @@ const AllCourses = () => {
               ],
             },
           ],
-          to: "/path",
+          to: "/course-overview",
         },
         {
           index: "0",
@@ -933,7 +933,7 @@ const AllCourses = () => {
               ],
             },
           ],
-          to: "/path",
+          to: "/course-overview",
         },
         {
           index: "0",
@@ -964,7 +964,7 @@ const AllCourses = () => {
               ],
             },
           ],
-          to: "/path",
+          to: "/course-overview",
         },
       ],
     },
