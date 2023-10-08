@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Navbar from "../AppComponents/Navbar";
 
 const CoursesCategory = () => {
   const courseCollection = [
@@ -61,39 +62,41 @@ const CoursesCategory = () => {
     },
   ];
   return (
-    <div className="grid grid-cols-12 gap-8 justify-center items-center px-12 py-12">
-      <div className="grid grid-cols-9 col-span-8 col-start-2 col-end-12 gap-4 justify-between items-center">
-        <span className="grid col-span-7 text-3xl font-semibold text-gray-900">
-          Choice favourite course from top category
-        </span>
-        <div className="grid col-span-2 justify-center items-center">
-          <div className="bg-[#51aae1] border-[#51aae1] border-2 border-solid rounded-md px-2 py-2 text-center text-white hover:bg-[#588fefd5] hover:border-[#588fefd5] hover:border-2 hover:border-solid w-[200px]">
-            <Link
-              to="/new-course"
-              className="flex flex-row justify-center items-center"
-            >
-              See all Categories
-            </Link>
+    <div>
+      <div className="grid grid-cols-12 gap-8 justify-center items-center px-12 py-12">
+        <div className="grid grid-cols-9 col-span-8 col-start-2 col-end-12 gap-4 justify-between items-center">
+          <span className="grid col-span-7 text-3xl font-semibold text-gray-900">
+            Choice favourite course from top category
+          </span>
+          <div className="grid col-span-2 justify-center items-center">
+            <div className="bg-[#51aae1] border-[#51aae1] border-2 border-solid rounded-md px-2 py-2 text-center text-white hover:bg-[#588fefd5] hover:border-[#588fefd5] hover:border-2 hover:border-solid w-[200px]">
+              <Link
+                to="/all-courses"
+                className="flex flex-row justify-center items-center"
+              >
+                See all Categories
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="grid grid-cols-12 col-span-8 col-start-2 col-end-12 gap-4 justify-center items-center">
-        {courseCollection.map((element) => (
-          <div className="h-[300px] flex col-span-3 rounded-xl bg-gradient-to-br from-blue-100 to-blue-50 hover:bg-gradient-to-tr  hover:from-blue-200 hover:to-blue-50 transition delay-150 hover:translate-y-2 duration-700">
-            <Link
-              to={element.to}
-              className="flex flex-col justify-center items-center px-8 py-8"
-            >
-              <img src={element.icon} className={element.property} />
-              <span className="text-gray-900 font-semibold text-xl text-center my-2">
-                {element.category}
-              </span>
-              <span className="text-gray-500 font-thin text-sm text-center my-2">
-                {element.desc}
-              </span>
-            </Link>
-          </div>
-        ))}
+        <div className="grid grid-cols-12 col-span-8 col-start-2 col-end-12 gap-4 justify-center items-center">
+          {courseCollection.map((element) => (
+            <div className="h-[300px] flex col-span-3 rounded-xl bg-gradient-to-br from-blue-100 to-blue-50 hover:bg-gradient-to-tr  hover:from-blue-200 hover:to-blue-50 transition delay-150 hover:translate-y-2 duration-700">
+              <Link
+                to={element.to}
+                className="flex flex-col justify-center items-center px-8 py-8"
+              >
+                <img src={element.icon} className={element.property} />
+                <span className="text-gray-900 font-semibold text-xl text-center my-2">
+                  {element.category}
+                </span>
+                <span className="text-gray-500 font-thin text-sm text-center my-2">
+                  {element.desc}
+                </span>
+              </Link>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

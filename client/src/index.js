@@ -17,6 +17,7 @@ import "./index.css"
 import UserDashboard from "./AppPages/UserDashboard";
 import CoursesOverview from "./AppPages/CoursesOverview";
 import PrivateMessaging from "./AppPages/PrivateMessaging";
+import Navbar from "./AppComponents/Navbar";
 
 const router = createBrowserRouter([
   {
