@@ -18,6 +18,7 @@ const Navbar = () => {
           <img
             src="https://i.ibb.co/3vf794V/virtual-academe-removebg-preview.png"
             className="w-32"
+            alt=""
           />
         </Link>
         <div className="col-span-9 ml-[90px]">
