@@ -49,12 +49,19 @@ const DiscussionForum = () => {
         <div className="grid grid-cols-12 col-span-9 justify-center items-center px-16 py-16">
           <div className="grid grid-cols-12 col-span-12 justify-center items-center">
             <div className="grid col-start-1 col-span-10">
+              <div className="flex">
+                <img
+                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZSUyMGltYWdlfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60"
+                  className="w-[50px] h-[50px] object-cover rounded-[25px] ml-[12px]"
+                />
+              </div>
               <span className="text-3xl col-span-10">
                 {discussionTopic.data.title}
               </span>
-              {/* <span className="text-sm text-gray-300 col-span-3">
-              {discussionTopic.data.description}
-              </span> */}
+              <span className="text-sm text-gray-400 col-span-3 my-2">
+                This topic has 6 topics, 17 replies, and was last updated 4
+                years ago.
+              </span>
             </div>
             <div className="bg-black border-black border-2 border-solid rounded-sm px-[5px] py-[5px] text-center text-white hover:bg-white hover:text-black hover:border-black hover:border-2 hover:border-solid w-16">
               <button
@@ -107,7 +114,7 @@ const DiscussionForum = () => {
             ))}
           </div>
 
-          <div className="grid grid-cols-12 col-span-12">
+          <div className="grid grid-cols-12 col-span-12 border-t-[1px] pt-8 border-gray-300 bg-gray-300 px-4 py-8 rounded-sm">
             <span className="text-base text-gray-800 col-span-12">
               {discussionTopic.data.description}
             </span>
