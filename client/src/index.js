@@ -18,8 +18,12 @@ import UserDashboard from "./AppPages/UserDashboard";
 import CoursesOverview from "./AppPages/CoursesOverview";
 import PrivateMessaging from "./AppPages/PrivateMessaging";
 import Navbar from "./AppComponents/Navbar";
-import CommunityChat from "./AppPages/CommunityChat";
-import Blogs from "./AppPages/Blogs";
+// <<<<<<< discussion-forum-vaishali
+// import CommunityChat from "./AppPages/CommunityChat";
+// import Blogs from "./AppPages/Blogs";
+
+import ComingSoon from "./AppPages/ComingSoon";
+
 
 const router = createBrowserRouter([
   {
@@ -67,13 +71,18 @@ const router = createBrowserRouter([
     path:'/messages',
     element:<PrivateMessaging/>
   },
-  {
-    path:'/community-chat',
-    element:<CommunityChat/>
-  },
-  {
-    path:'/blog',
-    element:<Blogs/>
+//   {
+// <<<<<<< discussion-forum-vaishali
+//     path:'/community-chat',
+//     element:<CommunityChat/>
+//   },
+//   {
+//     path:'/blog',
+//     element:<Blogs/>
+
+    path: '*',
+    element: <ComingSoon /> 
+
   }
 ]);
 
