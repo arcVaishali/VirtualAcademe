@@ -14,12 +14,12 @@ const Navbar = () => {
   return (
     <div className="grid grid-cols-12 px-4 justify-between items-center">
       <div className="grid grid-cols-12 col-span-12 col-start-1 px-4 py-4 justify-between items-center">
-        <div className="flex flex-col mr-4">
+        <Link to="/" className="flex flex-col mr-4">
           <img
-            src="https://i.ibb.co/DbScY2f/virtual-campus-logo-removebg-preview.png"
+            src="https://i.ibb.co/3vf794V/virtual-academe-removebg-preview.png"
             className="w-32"
           />
-        </div>
+        </Link>
         <div className="col-span-9 ml-[90px]">
           {navigation.map((element) => (
             <Link
