@@ -50,9 +50,13 @@ const router = createBrowserRouter([
     element: <DiscussionLanding/>
   },
   {
-    path: '/discussion-forum-page',
+    path: '/discussion-forum/:id',
     element: <DiscussionForum/>
   },
+  // {
+  //   path: '/discussion-forum-page',
+  //   element: <DiscussionForum/>
+  // },
   {
     path:'/user-dashboard',
     element:<UserDashboard/>

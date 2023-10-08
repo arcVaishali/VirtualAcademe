@@ -34,7 +34,7 @@ const DiscussionLanding = () => {
   const list = [
     {
       index: "0",
-      img: "https://plus.unsplash.com/premium_photo-1682140993556-f263e434000b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y29kaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60",
+      img: "https://tse4.mm.bing.net/th?id=OIP.m3EA64ySXVUjzGM58ARz7wHaGb&pid=Api",
       threadName: "Is life on Mars possible?",
       insights: { likes: "35", views: "240" },
       username: "thatindianboy",
@@ -42,7 +42,7 @@ const DiscussionLanding = () => {
     },
     {
       index: "0",
-      img: "https://plus.unsplash.com/premium_photo-1682140993556-f263e434000b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y29kaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60",
+      img: "https://tse4.mm.bing.net/th?id=OIP.m3EA64ySXVUjzGM58ARz7wHaGb&pid=Api",
       threadName: "Is life on Mars possible?",
       insights: { likes: "35", views: "240" },
       username: "thatindianboy",
@@ -50,7 +50,7 @@ const DiscussionLanding = () => {
     },
     {
       index: "0",
-      img: "https://plus.unsplash.com/premium_photo-1682140993556-f263e434000b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y29kaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60",
+      img: "https://tse4.mm.bing.net/th?id=OIP.m3EA64ySXVUjzGM58ARz7wHaGb&pid=Api",
       threadName: "Is life on Mars possible?",
       insights: { likes: "35", views: "240" },
       username: "thatindianboy",
@@ -58,7 +58,7 @@ const DiscussionLanding = () => {
     },
     {
       index: "0",
-      img: "https://plus.unsplash.com/premium_photo-1682140993556-f263e434000b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y29kaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60",
+      img: "https://tse4.mm.bing.net/th?id=OIP.m3EA64ySXVUjzGM58ARz7wHaGb&pid=Api",
       threadName: "Is life on Mars possible?",
       insights: { likes: "35", views: "240" },
       username: "thatindianboy",
