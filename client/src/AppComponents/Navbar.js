@@ -6,7 +6,7 @@ const Navbar = () => {
     { name: "Dashboard", to: "/user-dashboard" },
     { name: "View Courses", to: "/courses" },
     {name: "Discussion", to:"/discussion-forum"},
-    {name: "Messages", to:"/message"},
+    {name: "Messages", to:"/messages"},
     { name: "Community Chat", to: "/community-chat" },
     { name: "Blogs", to: "/blog" },
     // "Logout",
